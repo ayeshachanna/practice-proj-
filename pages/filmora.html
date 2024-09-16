@@ -1,0 +1,304 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <style>
+            .menu_bar {
+                overflow: hidden;
+                height:40px;
+                background-color: #32a8a8;
+                border-radius: 12px;
+                padding:10px 0px 10px 50px; 
+            }
+            .menu_bar a {
+                transition: border-radius 0.5s, color 0.5s;
+                float: left;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 8px 16px;
+                font-size: 20px;
+                text-decoration: none;
+                height: 25px;
+            }
+            .menu_bar a:hover{
+                color: yellow;
+                background-color: #5ec1ce;
+                border-radius: 15px;
+                height: 25px;
+                
+            }
+            .menu_bar a.active {
+                background-color: white;
+                color: #32a8a8;
+                border-radius: 15px;
+                height: 25px;
+                text-align: center;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            .tag_bar {
+                height:40px;
+                background-color: #374760;
+                border-radius: 0px;
+                padding:00px 0px 0px 0px;
+                
+            }
+            .tag_bar a {
+                float: left;
+                font-family: 'Courier New', Courier, monospace;
+                color: hsl(0, 0%, 100%);
+                text-align: center;
+                padding: 8px 16px;
+                font-size: 20px;
+                text-decoration: none;
+                height: 25px;
+            }
+            .tag_bar a:hover{
+                font-weight: bold;             
+            }
+            .tag_bar a.active {
+                background-color: rgb(78, 185, 185);
+                color: rgb(13, 83, 95);
+                border-radius: 0px;
+                height: 25px;
+                text-align: center;
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: bold;
+            }
+
+            .sidebar{
+                margin-left: 70%;
+                width: 30%;
+                height: 700px;
+                background-color: rgb(255, 251, 251);
+            }
+
+            .sidebar h1{
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 40px;
+                color: #374760;
+            }
+            
+            main{
+                margin-left: 0px;
+                width: 1103px;
+                float:left;
+            }
+
+            main h1{
+                text-align: center;  
+                color: rgb(0, 0, 0); 
+                font-size: 50px; 
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            main p{
+                text-align: center;
+                padding-left: 20px;
+                width: 980px;
+                font-size: 24px; 
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            
+
+            .footer {
+                margin-top: 60%;
+                position: relative;
+                background-color: rgb(71, 69, 69);
+                color: white;
+                text-align: center;
+                height: 170px; 
+                padding-top: 45px;
+            }
+            .footer p{
+                font-size: 20px;
+            }
+            
+            .recent{
+                height: 55px;
+                background-color: white;
+                border-radius: 6px;
+                box-shadow:0 6px 15px 0 rgba(0,0,0,0.2),0 6px 30px 0 rgba(0, 0, 0, 0.19);
+                padding-top: 0px;
+                padding-bottom: 0.015px;
+            }
+
+            .recent img{
+                float: left;
+                padding-right: 10px;
+            }
+            .recent p{
+                color: #374760;
+                padding-top: 15px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                transition: color 0.5s;
+            }
+
+            .recent p:hover{
+                color: rgb(0, 195, 255);
+            }
+            
+
+            .follow{
+                width: 8%px;
+                transition: transform 0.45s;
+                margin-bottom: 10px;
+            }
+            .follow:hover{
+                transform: scale(1.045);
+            }
+            .follow img{
+                float: left;
+                padding-right: 200px;
+            }
+            .follow p{
+                color: gray;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                float: left;
+                font-size: large;
+                
+            }
+            .follow a{
+                text-decoration: none;
+            }
+
+            .btn{
+                background-color: rgb(0, 128, 255); 
+                font-size: 40px; 
+                color: snow;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                border-radius: 10px; 
+                width: 300px; 
+                height: 100px;
+                transition: transform 0.5s, box-shadow 0.5s;
+            }
+            .btn:hover{
+                transform: scale(1.05);
+                box-shadow:0 6px 15px 0 rgba(0,0,0,0.2),0 6px 30px 0 rgba(0, 0, 0, 0.19);
+            }
+
+        </style>
+
+        <title>SoftEra</title>
+    </head>
+
+    <body>
+        <div class="menu_bar">
+            <nav>
+                <a class="active" href="\home.html">Home</a>
+                <a  href="\about.html">About</a>
+                <a  href="\contact.html">Contact</a>
+                <a  href="\disclaimer.html">Disclaimer</a>
+            </nav>
+        </div>
+
+            <center>
+            <img src="\logo.png"></img>
+        </center>
+    
+
+        <div class="tag_bar">
+            <nav>
+                <a class="active" href="#home">PREMIUM</a>
+                <a  href="#news">FREEMIUM</a>
+                <a  href="#contact">CRACKS</a>
+                <a  href="#about">UPDATES</a>
+            </nav>
+        </div>
+
+        <main>
+            <h1>Wondershare Filmora 8.3.2 Cracked</h1>
+            <p>Wondershare Filmora 8 : is a great video editing software which has powerful tools combined with an easy to operate user interface.</p>
+            <p>The design is fresh, modern and is a joy to use. If you recognize the framework and setup of Filmora it is because it is from the developers who brought you Wondershare Video Editor.Wondershare Filmora 8.0 Crack is provided exclusively by PirateCity.NET in other means.</p>
+            <p>Wondershare Filmora 8 is an simple video editor that ignites your stories, makes it fun to transform precious moments into stunning videos for sharing anywhere. Wondershare Filmora 8.3.2 Features : Record desktop screen and webcam directly. Import and stabilize video directly. Lots of vide effects and transitions. Create, edit and export videos (up-to 4K). Upload, export, and burn to DVD disc. Full set of video editing tools, and so much more. Allows to add graphic contents & titles. Flexible and extremely easy-to-use. Control time lapses or motion effects. Apply panning and zooming movements. New lens distortion correction tool. New audio noise and speed control. New way to trim or merger video files. New animated elements and video effects. New action cam tool & video stabilization. Adjust the audio, picture, and more. Reverse playback (flip/play backwards).
+            </p>
+            <center>
+            <img src="\assets/filmora.png"></img> 
+        </center> 
+        <p>How to Crack activate or register Wondershare Filmora 8 ?</p>
+        <p>Turn off internet connection “Recommended”</p>
+        <p>Install Wondershare Filmora 8.3.2 trial setup “Provided”</p>
+        <p>After installation > Run HostBlock.exe “as administrator”</p>
+            
+            <p>Now use any of the provided registration code to activate filmora 8.3.2</p>
+            
+            <p>Click Below To Download:</p>        
+            <center>
+                <input type="button" value="Download" class="btn">
+            </input>
+        </center>
+        </main>
+
+        
+            <div class="sidebar">
+                <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Recent Posts</h1>
+
+                <div class="recent">
+                    <img src="\assets/gta.png" width="50" height="50"></img>
+                    <p>GTA 5 Cracked</p>
+                </div>
+                <div class="recent">
+                    <img src="\assets/vlc.svg" width="50" height="50"></img>
+                    <p>VLC Player For PC</p>
+                </div>
+                <div class="recent">
+                    <img src="\assets/any.png" width="50" height="50"></img>
+                    <p>AnyDesk Remote Share</p>
+                </div>
+                <div class="recent">
+                    <img src="\assets/film.png" width="50" height="50"></img>
+                    <p>Wondershare Filmora Updated</p>
+                </div>
+                <div class="recent">
+                    <img src="\assets/maya.png" width="50" height="50"></img>
+                    <p>Autodesk Maya</p>
+                </div>
+                
+
+
+                <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Follow us</h1>
+                <div class="follow">
+                    <a href="#">
+                        <img src="\assets/fb.png" width="50" height="50"></img>
+                        <p>34.2k likes</p>
+                    </a>
+                </div>
+                <div class="follow">
+                    <a href="#">
+                        <img src="\assets/yt.png" width="50" height="50"></img>
+                        <p>15k Subscribers</p>
+                    </a>
+                </div>
+                <div class="follow">
+                    <a href="#">
+                        <img src="\assets/tw.png" width="50" height="50"></img>
+                        <p>12.8k followers</p>  
+                    </a>
+                </div>
+                <div class="follow">
+                    <a href="#">
+                        <img src="\assets/in.png" width="50" height="50"></img>
+                        <p>65k followers</p>
+                    </a>
+                </div>
+                
+                
+            </div>
+        
+        
+        
+        <div class="footer">
+            <p>Made by Haris Shah, Bahadur Khan, Abdul Wassay, Hamza Khan, Sheikh Birjees Ali with ❤</p>
+            <p>Instructor Miss Fatima Shakeel</p>
+            <p>Copyright © 2020 | All Rights Reserved</p>
+        </div>
+   
+            
+
+
+
+    </body>
+
+
+</html>

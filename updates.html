@@ -1,0 +1,325 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <style>
+            .menu_bar {
+                overflow: hidden;
+                height:40px;
+                background-color: #32a8a8;
+                border-radius: 12px;
+                padding:10px 0px 10px 50px; 
+            }
+            .menu_bar a {
+                transition: border-radius 0.5s, color 0.5s;
+                float: left;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 8px 16px;
+                font-size: 20px;
+                text-decoration: none;
+                height: 25px;
+            }
+            .menu_bar a:hover{
+                color: yellow;
+                background-color: #5ec1ce;
+                border-radius: 15px;
+                height: 25px;
+                
+            }
+            .menu_bar a.active {
+                background-color: white;
+                color: #32a8a8;
+                border-radius: 15px;
+                height: 25px;
+                text-align: center;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            .tag_bar {
+                height:40px;
+                background-color: #374760;
+                border-radius: 0px;
+                padding:00px 0px 0px 0px;
+                
+            }
+            .tag_bar a {
+                float: left;
+                font-family: 'Courier New', Courier, monospace;
+                color: hsl(0, 0%, 100%);
+                text-align: center;
+                padding: 8px 16px;
+                font-size: 20px;
+                text-decoration: none;
+                height: 25px;
+            }
+            .tag_bar a:hover{
+                font-weight: bold;             
+            }
+            .tag_bar a.active {
+                background-color: rgb(78, 185, 185);
+                color: rgb(13, 83, 95);
+                border-radius: 0px;
+                height: 25px;
+                text-align: center;
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: bold;
+            }
+
+            .logo{
+                padding: 20px 0px 20px 0px;
+            }
+
+            .sidebar{
+                margin-left: 70%;
+                width: 30%;
+                height: 700px;
+                background-color: rgb(255, 251, 251);
+            }
+
+            .sidebar h1{
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 40px;
+                color: #374760;
+            }
+            
+            main{
+                margin-left: 0px;
+                width: 1103px;
+                float:left;
+            }
+
+            .post_style{
+                transition: background-color 0.65s;
+                margin-top: 30px;
+                margin-left: 20px;
+                width: 500px;
+                height: 300px;
+                background-color: rgb(255, 255, 255);
+                border-radius: 10px;
+                box-shadow: 0 6px 15px 0 rgba(0,0,0,0.2),0 6px 30px 0 rgba(0, 0, 0, 0.19);
+            }
+
+            .post_style:hover{
+                background-color: #32a8a8;
+                box-shadow: 0 12px 30px 0 rgba(0,0,0,0.2),0 6px 30px 0 rgba(0, 0, 0, 0.19)
+            }
+
+            .post_style h3{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                background-color: #374760;
+                padding-left: 5px;
+                color: rgb(255, 255, 255);
+                
+            }
+
+            .post_style img{
+                padding-top: 20px;
+                padding-right: 5px;
+                padding-left: 5px;
+                float: left;
+            }
+            .post_style h1{
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 40px;
+                color: #374760;
+            }
+
+            
+
+            .post_style p{
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 20px;
+                color: #374760;
+            }
+
+            .footer {
+                margin-top: 35%;
+                position: relative;
+                background-color: rgb(71, 69, 69);
+                color: white;
+                text-align: center;
+                height: 170px; 
+                padding-top: 45px;
+            }
+            .footer p{
+                font-size: 20px;
+            }
+            
+            .recent{
+                height: 55px;
+                background-color: white;
+                border-radius: 6px;
+                box-shadow:0 6px 15px 0 rgba(0,0,0,0.2),0 6px 30px 0 rgba(0, 0, 0, 0.19);
+                padding-top: 0px;
+                padding-bottom: 0.015px;
+            }
+
+            .recent img{
+                float: left;
+                padding-right: 10px;
+            }
+            .recent p{
+                color: #374760;
+                padding-top: 15px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+            }
+
+            .recent p:hover{
+                color: rgb(0, 195, 255);
+            }
+            
+
+            .follow{
+                width: 8%px;
+                transition: transform 0.45s;
+                margin-bottom: 10px;
+            }
+            .follow:hover{
+                transform: scale(1.045);
+            }
+            .follow img{
+                float: left;
+                padding-right: 200px;
+            }
+            .follow p{
+                color: gray;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                float: left;
+                font-size: large;
+                
+            }
+            .follow a{
+                text-decoration: none;
+            }
+
+        </style>
+
+        <title>SoftEra</title>
+    </head>
+
+    <body>
+        <div class="menu_bar">
+            <nav>
+                <a class="active" href="home.html">Home</a>
+                <a  href="about.html">About</a>
+                <a  href="contact.html">Contact</a>
+                <a  href="disclaimer.html">Disclaimer</a>
+            </nav>
+        </div>
+
+        <div class="logo">
+            <center>
+            <img src="logo.png"></img>
+        </center>
+        </div>
+
+        <div class="tag_bar">
+            <nav>
+                <a href="premium.html">PREMIUM</a>
+                <a  href="freemium.html">FREEMIUM</a>
+                <a  href="cracks.html">CRACKS</a>
+                <a class="active" href="updates.html">UPDATES</a>
+            </nav>
+        </div>
+
+        <main>
+
+            <center>
+                <h1 style="padding-top: 10px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: rgb(0, 81, 128);">All Softwares with Tagged UPDATES</h1>
+            </center>
+           
+            <a href="pages/gta5.html">
+                <div class="post_style" style="float:left">
+                    <img src="assets/gta.png" width="250" height="250"></img>
+                    <h1>Grand Theft Auto Five Crack</h1>
+                    <p>GTA 5 CRACK LAUNCHER CRACKED, GTAVLAUNCHER.EXE.</p>
+                    <h3>UPDATES</h3>
+                </div>
+            </a>
+           
+        <a href="pages/autocad.html">
+            <div class="post_style" style="float:left">
+                <img src="assets/maya.png" width="200" height="200"></img>
+                <h1>Autodesk Maya 2016 - SP5</h1>
+                <p>Autodesk Maya 2016 Service Pack 5 includes several important fixes. Refer to the readme for more information. Including Important Installation.</p>
+                <h3>UPDATES</h3>
+            </div>
+            </a>
+            
+        </main>
+
+        
+            <div class="sidebar">
+                <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Recent Posts</h1>
+
+                <div class="recent">
+                    <img src="assets/post1.png" width="50" height="50"></img>
+                    <p>WinRAR for PC 64bit</p>
+                </div>
+                <div class="recent">
+                    <img src="assets/post1.png" width="50" height="50"></img>
+                    <p>WinRAR for PC 64bit</p>
+                </div>
+                <div class="recent">
+                    <img src="assets/post1.png" width="50" height="50"></img>
+                    <p>WinRAR for PC 64bit</p>
+                </div>
+                <div class="recent">
+                    <img src="assets/post1.png" width="50" height="50"></img>
+                    <p>WinRAR for PC 64bit</p>
+                </div>
+                <div class="recent">
+                    <img src="assets/post1.png" width="50" height="50"></img>
+                    <p>WinRAR for PC 64bit</p>
+                </div>
+                
+
+
+                <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Follow us</h1>
+                <div class="follow">
+                    <a href="#">
+                        <img src="assets/fb.png" width="50" height="50"></img>
+                        <p>34.2k likes</p>
+                    </a>
+                </div>
+                <div class="follow">
+                    <a href="#">
+                        <img src="assets/yt.png" width="50" height="50"></img>
+                        <p>15k Subscribers</p>
+                    </a>
+                </div>
+                <div class="follow">
+                    <a href="#">
+                        <img src="assets/tw.png" width="50" height="50"></img>
+                        <p>12.8k followers</p>  
+                    </a>
+                </div>
+                <div class="follow">
+                    <a href="#">
+                        <img src="assets/in.png" width="50" height="50"></img>
+                        <p>65k followers</p>
+                    </a>
+                </div>
+                
+                
+            </div>
+        
+        
+        
+        <div class="footer">
+            <p>Made by Haris Shah, Bahadur Khan, Abdul Wassay, Hamza Khan, Sheikh Birjees Ali with ❤</p>
+            <p>Instructor Miss Fatima Shakeel</p>
+            <p>Copyright © 2020 | All Rights Reserved</p>
+        </div>
+   
+            
+
+
+
+    </body>
+
+
+</html>

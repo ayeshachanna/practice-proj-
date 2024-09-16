@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <style>
+            .menu_bar {
+                overflow: hidden;
+                height:40px;
+                background-color: #32a8a8;
+                border-radius: 12px;
+                padding:10px 0px 10px 50px; 
+            }
+            .menu_bar a {
+                transition: border-radius 0.5s, color 0.5s;
+                float: left;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 8px 16px;
+                font-size: 20px;
+                text-decoration: none;
+                height: 25px;
+            }
+            .menu_bar a:hover{
+                color: yellow;
+                background-color: #5ec1ce;
+                border-radius: 15px;
+                height: 25px;
+                
+            }
+            .menu_bar a.active {
+                background-color: white;
+                color: #32a8a8;
+                border-radius: 15px;
+                height: 25px;
+                text-align: center;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+
+
+            
+            
+            main{
+                width: 100%;
+            }
+
+
+            .footer {
+                margin-top: 25%;
+                position: relative;
+                background-color: rgb(71, 69, 69);
+                color: white;
+                text-align: center;
+                height: 170px; 
+                padding-top: 45px;
+            }
+            .footer p{
+                font-size: 20px;
+            }
+
+            input[type=text], select, textarea {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                margin-top: 6px;
+                margin-bottom: 16px;
+                resize: vertical;
+            }
+
+            input[type=submit] {
+                background-color: #4CAF50;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            input[type=submit]:hover {
+                background-color: #45a049;
+            }
+
+            .container {
+                border-radius: 5px;
+                background-color: #f2f2f2;
+                padding: 20px;
+            }
+
+        </style>
+
+        <title>SoftEra</title>
+    </head>
+
+    <body>
+        <div class="menu_bar">
+            <nav>
+                <a href="home.html">Home</a>
+                <a  href="about.html">About</a>
+                <a class="active"  href="contact.html">Contact</a class="active">
+                <a  href="disclaimer.html">Disclaimer</a>
+            </nav>
+        </div>
+
+        <center>
+            <img src="logo.png" style="padding-top: 10px;"></img>
+        </center>
+
+        <main>
+            <center>
+                    <h1>Feel Free to Contact us !</h1>
+                    <p>Please fill up the form below.</p>
+            </center>
+            
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your Name..">
+
+    <label for="lname">Email</label>
+    <input type="text" id="Email" name="Email" placeholder="Your Email..">
+
+    <label for="lname">Country</label>
+    <input type="text" id="Country" name="Country" placeholder="Your Country..">
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Description.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+       
+            
+        </main>
+        
+        
+        
+        <div class="footer">
+            <p>Made by Haris Shah, Bahadur Khan, Abdul Wassay, Hamza Khan, Sheikh Birjees Ali with ❤</p>
+            <p>Instructor Miss Fatima Shakeel</p>
+            <p>Copyright © 2020 | All Rights Reserved</p>
+        </div>
+   
+            
+
+
+
+    </body>
+
+
+</html>
